@@ -1,0 +1,36 @@
+/*標籤名稱選擇器*/   /* 通常只會用在body*/
+                body{
+                    background-color:bisque;
+                    width:600px;
+                }
+                /*ID 選擇器*/
+                #title-1{
+                    text-decoration:overline dotted blue;
+
+                }
+                
+                
+                
+                
+                
+                
+                /*class 選擇器 */
+                .title{
+                    margin-top:10px;
+                    margin-bottom:10px;
+                    font-size:20px;
+                    color:blueviolet;
+                    
+                }
+                .headline{
+                    color:rgb(179, 47, 255);
+                    font-weight:bold;font-size:24px;
+                    margin-bottom:20px
+                }
+               
+                .ind{
+                    color:red;
+                    font-weight:bold;
+                    background-color: 
+                    black;
+                }
