@@ -1,0 +1,56 @@
+.list{
+    display:flex; justify-content:center;
+}
+
+.product{
+    flex:none;
+    width:280px;
+    margin:10px;
+    background-color: pink;
+}
+.headline{
+    font-weight:bold;
+    font-size:30px;
+    color:aqua;
+    margin-bottom: 15px;
+    text-align:center;
+    display:inline;
+}
+.desktop-menu{
+    display:block;
+    text-align:center;
+}
+.mobile-menu{
+    display:none;
+    text-align:center;
+}
+@media (max-width:1250px){ /*平板的case*/
+    .list{
+        flex-wrap:wrap; /* 很重要，要有這行才會換行*/
+
+    }
+    .product{
+        width:45%;
+    }
+}
+@media (max-width:500px){  /*手機的case*/
+    
+    .list{
+        /*flex-wrap:wrap; */ /*這一行不用了，因為小於1250px的時候已經設定過了*/
+
+    }   
+        
+    .product{
+        width:90%;
+    }
+    .headline{
+        font-size:20px;
+
+    }
+    .desktop-menu{
+        display:none;
+    }
+    .mobile-menu{
+        display:block;
+    }   
+}
